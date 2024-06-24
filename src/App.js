@@ -1,4 +1,5 @@
-import "./index.css";
+import React from 'react';
+import "./index.css"
 import routes from "./routes";
 import {useRoutes} from "react-router-dom";
 
@@ -8,7 +9,7 @@ function App() {
 
     // JSX
     return (
-        <div className="App">
+        <div className="App font-iran-sans">
             {router}
         </div>
     );
