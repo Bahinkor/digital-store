@@ -39,36 +39,45 @@ function TopBar() {
                             <div
                                 className="absolute w-[560px] h-[420px] bg-white text-gray-600 rounded-[2px] border-[1px] border-gray-300 z-40">
                                 {/* Category title */}
-                                <ul className="w-[170px] h-[400px] border-l border-gray-200 [&>li]:flex [&>li]:items-center [&>li]:justify-between [&>li]:border-b [&>li]:border-gray-200 [&>li]:px-[15px] [&>li]:cursor-pointer">
-                                    <li className="hover:text-red-500">
-                                        <Link to="/"
-                                              className="flex items-center gap-2 h-[55px]">
-                                            <img
-                                                src="https://digital.masirwp.com/wp-content/uploads/2024/01/digital.png"
-                                                alt="image icon menu" loading="lazy" className="size-6"/>
-                                            کالای دیجیتال
-                                        </Link>
-                                        <KeyboardArrowLeft/>
+                                <ul className="w-[170px] h-[400px] border-l border-gray-200">
+                                    <li>
+                                        <div
+                                            className="hover:text-red-500 flex items-center justify-between border-b border-gray-200 px-[15px] cursor-pointer">
+                                            <Link to="/"
+                                                  className="flex items-center gap-2 h-[55px]">
+                                                <img
+                                                    src="https://digital.masirwp.com/wp-content/uploads/2024/01/digital.png"
+                                                    alt="image icon menu" loading="lazy" className="size-6"/>
+                                                کالای دیجیتال
+                                            </Link>
+                                            <KeyboardArrowLeft className="!size-4"/>
+                                        </div>
                                     </li>
-                                    <li className="hover:text-red-500">
-                                        <Link to="/"
-                                              className="flex items-center gap-2 h-[55px]">
-                                            <img
-                                                src="https://digital.masirwp.com/wp-content/uploads/2024/01/لوازم-جانبی-موبایل.png"
-                                                alt="image icon menu" loading="lazy" className="size-6"/>
-                                            لوازم جانبی موبایل
-                                        </Link>
-                                        <KeyboardArrowLeft/>
+                                    <li>
+                                        <div
+                                            className="hover:text-red-500 flex items-center justify-between border-b border-gray-200 px-[15px] cursor-pointer">
+                                            <Link to="/"
+                                                  className="flex items-center gap-2 h-[55px]">
+                                                <img
+                                                    src="https://digital.masirwp.com/wp-content/uploads/2024/01/لوازم-جانبی-موبایل.png"
+                                                    alt="image icon menu" loading="lazy" className="size-6"/>
+                                                لوازم جانبی موبایل
+                                            </Link>
+                                            <KeyboardArrowLeft className="!size-4"/>
+                                        </div>
                                     </li>
-                                    <li className="hover:text-red-500">
-                                        <Link to="/"
-                                              className="flex items-center gap-2 h-[55px]">
-                                            <img
-                                                src="https://digital.masirwp.com/wp-content/uploads/2024/01/گجت-های-هوشمند.png"
-                                                alt="image icon menu" loading="lazy" className="size-6"/>
-                                            گجت های هوشمند
-                                        </Link>
-                                        <KeyboardArrowLeft/>
+                                    <li>
+                                        <div
+                                            className="hover:text-red-500 flex items-center justify-between border-b border-gray-200 px-[15px] cursor-pointer">
+                                            <Link to="/"
+                                                  className="flex items-center gap-2 h-[55px]">
+                                                <img
+                                                    src="https://digital.masirwp.com/wp-content/uploads/2024/01/گجت-های-هوشمند.png"
+                                                    alt="image icon menu" loading="lazy" className="size-6"/>
+                                                گجت های هوشمند
+                                            </Link>
+                                            <KeyboardArrowLeft className="!size-4"/>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
