@@ -1,6 +1,15 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {Window, Home, ConfirmationNumber, Loyalty, Person, ShoppingCart, Search} from "@mui/icons-material";
+import {
+    Window,
+    Home,
+    ConfirmationNumber,
+    Loyalty,
+    Person,
+    ShoppingCart,
+    Search,
+    KeyboardArrowLeft
+} from "@mui/icons-material";
 
 function TopBar() {
     // JSX
@@ -20,12 +29,49 @@ function TopBar() {
                 {/* Category */}
                 <div>
                     <ul className="flex items-center text-sm">
-                        <li>
+                        <li className="relative">
                             <Link to="/"
                                   className="flex items-center gap-2 px-[15px] py-[8px] rounded-xl transition-colors hover:hover-bg-color">
                                 <Window/>
                                 دسته بندی کالا ها
                             </Link>
+                            {/* div Category */}
+                            <div
+                                className="absolute w-[560px] h-[420px] bg-white text-gray-600 rounded-[2px] border-[1px] border-gray-300 z-40">
+                                {/* Category title */}
+                                <ul className="w-[170px] h-[400px] border-l border-gray-200 [&>li]:flex [&>li]:items-center [&>li]:justify-between [&>li]:border-b [&>li]:border-gray-200 [&>li]:px-[15px] [&>li]:cursor-pointer">
+                                    <li className="hover:text-red-500">
+                                        <Link to="/"
+                                              className="flex items-center gap-2 h-[55px]">
+                                            <img
+                                                src="https://digital.masirwp.com/wp-content/uploads/2024/01/digital.png"
+                                                alt="image icon menu" loading="lazy" className="size-6"/>
+                                            کالای دیجیتال
+                                        </Link>
+                                        <KeyboardArrowLeft/>
+                                    </li>
+                                    <li className="hover:text-red-500">
+                                        <Link to="/"
+                                              className="flex items-center gap-2 h-[55px]">
+                                            <img
+                                                src="https://digital.masirwp.com/wp-content/uploads/2024/01/لوازم-جانبی-موبایل.png"
+                                                alt="image icon menu" loading="lazy" className="size-6"/>
+                                            لوازم جانبی موبایل
+                                        </Link>
+                                        <KeyboardArrowLeft/>
+                                    </li>
+                                    <li className="hover:text-red-500">
+                                        <Link to="/"
+                                              className="flex items-center gap-2 h-[55px]">
+                                            <img
+                                                src="https://digital.masirwp.com/wp-content/uploads/2024/01/گجت-های-هوشمند.png"
+                                                alt="image icon menu" loading="lazy" className="size-6"/>
+                                            گجت های هوشمند
+                                        </Link>
+                                        <KeyboardArrowLeft/>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
                             <Link to="/"
