@@ -39,10 +39,10 @@ function TopBar() {
                             <div
                                 className="absolute w-[560px] h-[420px] bg-white text-gray-600 rounded-[2px] border-[1px] border-gray-300 z-40">
                                 {/* Category title */}
-                                <ul className="w-[170px] h-[400px] border-l border-gray-200">
-                                    <li>
+                                <ul>
+                                    <li className="relative flex group">
                                         <div
-                                            className="hover:text-red-500 flex items-center justify-between border-b border-gray-200 px-[15px] cursor-pointer">
+                                            className="w-[170px] h-[56px] hover:text-red-500 flex items-center justify-between border-l border-b border-gray-200 px-[15px] cursor-pointer">
                                             <Link to="/"
                                                   className="flex items-center gap-2 h-[55px]">
                                                 <img
@@ -52,31 +52,346 @@ function TopBar() {
                                             </Link>
                                             <KeyboardArrowLeft className="!size-4"/>
                                         </div>
-                                    </li>
-                                    <li>
+
+                                        {/* Sub menu (category) */}
                                         <div
-                                            className="hover:text-red-500 flex items-center justify-between border-b border-gray-200 px-[15px] cursor-pointer">
+                                            className="absolute right-[10.7rem] flex flex-col flex-wrap gap-4 w-[387px] h-[418px] px-[15px] py-5 z-50 transition invisible opacity-0 group-hover:visible group-hover:opacity-100">
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    لوازم جانبی موبایل
+                                                </Link>
+                                                <li>
+                                                    <Link to="/">
+                                                        دوربین دو چشمی
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/">
+                                                        هدفون هدست
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/">
+                                                        پاوربانک
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/">
+                                                        کیف و کاور
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/">
+                                                        پایه نگهدارنده گوشی
+                                                    </Link>
+                                                </li>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    اسپیکر بلوتوث باسیم
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    شارژر تبلت و موبایل
+                                                </Link>
+                                                <li>
+                                                    <Link to="/">
+                                                        کامپیوتر و تجهیزات
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/">
+                                                        قطعات داخلی کامپیوتر
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/">
+                                                        وسایل مخصوص بازی
+                                                    </Link>
+                                                </li>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    لوازم جانبی دوربین
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    کارت حافظه
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    کاغذ چاپ عکس
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    کیف
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    لنز
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    واقعیت مجازی
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    لوازم جانبی لپتاپ
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
+                                        </div>
+                                    </li>
+                                    <li className="relative flex group">
+                                        <div
+                                            className="w-[170px] h-[56px] hover:text-red-500 flex items-center justify-between border-l border-b border-gray-200 px-[15px] cursor-pointer">
                                             <Link to="/"
                                                   className="flex items-center gap-2 h-[55px]">
                                                 <img
-                                                    src="https://digital.masirwp.com/wp-content/uploads/2024/01/لوازم-جانبی-موبایل.png"
+                                                    src="https://digital.masirwp.com/wp-content/uploads/2024/01/digital.png"
                                                     alt="image icon menu" loading="lazy" className="size-6"/>
-                                                لوازم جانبی موبایل
+                                                کالای دیجیتال
                                             </Link>
                                             <KeyboardArrowLeft className="!size-4"/>
                                         </div>
-                                    </li>
-                                    <li>
+
+                                        {/* Sub menu (category) */}
                                         <div
-                                            className="hover:text-red-500 flex items-center justify-between border-b border-gray-200 px-[15px] cursor-pointer">
+                                            className="absolute right-[10.7rem] flex flex-col flex-wrap gap-4 w-[387px] h-[418px] px-[15px] py-5 z-50 transition invisible opacity-0 group-hover:visible group-hover:opacity-100">
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    لوازم جانبی موبایل
+                                                </Link>
+                                                <li>
+                                                    <Link to="/">
+                                                        دوربین دو چشمی
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/">
+                                                        هدفون هدست
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/">
+                                                        پاوربانک
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/">
+                                                        کیف و کاور
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/">
+                                                        پایه نگهدارنده گوشی
+                                                    </Link>
+                                                </li>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    اسپیکر بلوتوث باسیم
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    شارژر تبلت و موبایل
+                                                </Link>
+                                                <li>
+                                                    <Link to="/">
+                                                        کامپیوتر و تجهیزات
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/">
+                                                        قطعات داخلی کامپیوتر
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/">
+                                                        وسایل مخصوص بازی
+                                                    </Link>
+                                                </li>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    لوازم جانبی دوربین
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    کارت حافظه
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    کاغذ چاپ عکس
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    کیف
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    لنز
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    واقعیت مجازی
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    لوازم جانبی لپتاپ
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
+                                        </div>
+                                    </li>
+                                    <li className="relative flex group">
+                                        <div
+                                            className="w-[170px] h-[56px] hover:text-red-500 flex items-center justify-between border-l border-b border-gray-200 px-[15px] cursor-pointer">
                                             <Link to="/"
                                                   className="flex items-center gap-2 h-[55px]">
                                                 <img
-                                                    src="https://digital.masirwp.com/wp-content/uploads/2024/01/گجت-های-هوشمند.png"
+                                                    src="https://digital.masirwp.com/wp-content/uploads/2024/01/digital.png"
                                                     alt="image icon menu" loading="lazy" className="size-6"/>
-                                                گجت های هوشمند
+                                                کالای دیجیتال
                                             </Link>
                                             <KeyboardArrowLeft className="!size-4"/>
+                                        </div>
+
+                                        {/* Sub menu (category) */}
+                                        <div
+                                            className="absolute right-[10.7rem] flex flex-col flex-wrap gap-4 w-[387px] h-[418px] px-[15px] py-5 z-50 transition invisible opacity-0 group-hover:visible group-hover:opacity-100">
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    لوازم جانبی موبایل
+                                                </Link>
+                                                <li>
+                                                    <Link to="/">
+                                                        دوربین دو چشمی
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/">
+                                                        هدفون هدست
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/">
+                                                        پاوربانک
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/">
+                                                        کیف و کاور
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/">
+                                                        پایه نگهدارنده گوشی
+                                                    </Link>
+                                                </li>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    اسپیکر بلوتوث باسیم
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    شارژر تبلت و موبایل
+                                                </Link>
+                                                <li>
+                                                    <Link to="/">
+                                                        کامپیوتر و تجهیزات
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/">
+                                                        قطعات داخلی کامپیوتر
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/">
+                                                        وسایل مخصوص بازی
+                                                    </Link>
+                                                </li>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    لوازم جانبی دوربین
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    کارت حافظه
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    کاغذ چاپ عکس
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    کیف
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    لنز
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    واقعیت مجازی
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
+                                            <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                <Link to="/">
+                                                    لوازم جانبی لپتاپ
+                                                </Link>
+                                            </ul>
+                                            {/*  */}
                                         </div>
                                     </li>
                                 </ul>
