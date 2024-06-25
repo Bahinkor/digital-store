@@ -30,7 +30,7 @@ function TopBar() {
                 <div>
                     <ul className="flex items-center text-sm">
                         {/* Note: group-one custom class */}
-                        <li className="relative py-[0.5rem] group-one">
+                        <li className="relative py-[0.9rem] group-one">
                             <Link to="/"
                                   className="flex items-center gap-2 px-[15px] py-[8px] rounded-xl transition-colors hover:hover-bg-color">
                                 <Window/>
@@ -39,7 +39,7 @@ function TopBar() {
                             {/* div Category */}
                             {/* Note: group-one-hover custom class */}
                             <div
-                                className="absolute top-[55px] hidden group-one-hover w-[560px] h-[420px] bg-white text-gray-600 rounded-[2px] border-[1px] border-gray-300 z-40">
+                                className="absolute top-[67px] hidden group-one-hover w-[560px] h-[420px] bg-white text-gray-600 rounded-[2px] border-[1px] border-gray-300 z-40">
                                 {/* Category title */}
                                 <ul>
                                     <li className="relative flex group">
