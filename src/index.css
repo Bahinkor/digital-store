@@ -15,4 +15,8 @@
     .hover-bg-color {
         background-color: rgba(255, 255, 255, 0.5);
     }
+
+    .group-one:hover .group-one-hover {
+        display: block;
+    }
 }
