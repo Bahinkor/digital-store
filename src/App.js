@@ -12,9 +12,7 @@ function App() {
     // JSX
     return (
         <div className="App font-iran-sans">
-            <header>
-                <TopBar/>
-            </header>
+            <TopBar/>
             {/* shape screen */}
             <Shape/>
             {router}
