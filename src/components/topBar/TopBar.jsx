@@ -11,7 +11,9 @@ import {
     KeyboardArrowLeft
 } from "@mui/icons-material";
 
+
 function TopBar() {
+
     // JSX
     return (
         // Navigation (top bar)
