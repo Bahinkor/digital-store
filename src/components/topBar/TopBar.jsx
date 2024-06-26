@@ -11,7 +11,7 @@ import {
     KeyboardArrowLeft
 } from "@mui/icons-material";
 import {useStore} from "@nanostores/react";
-import {isHover} from "../../store/hover-store";
+import {isHover} from "../../stores/hover-store";
 
 
 function TopBar() {
@@ -23,7 +23,7 @@ function TopBar() {
         // Navigation (top bar)
         <header>
             <nav
-                className="sticky z-50 flex items-center justify-between w-full h-[70px] text-sm bg-gradient-to-l from-blue-800 to-red-400 text-white px-4 py-2">
+                className="sticky z-50 flex items-center justify-between w-full h-[65px] text-sm bg-gradient-to-l from-blue-800 to-red-400 text-white px-4 py-2">
                 {/* Logo & Category */}
                 <div className="flex items-center">
                     {/* Logo */}

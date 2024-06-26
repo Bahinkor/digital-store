@@ -19,4 +19,8 @@
     .group-one:hover .group-one-hover {
         display: block;
     }
+
+    .bg-black-alpha-50 {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 }
