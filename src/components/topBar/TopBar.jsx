@@ -37,7 +37,8 @@ function TopBar() {
                     <div>
                         <ul className="flex items-center text-sm">
                             {/* Note: group-one custom class */}
-                            <li className="relative py-[0.9rem] group-one" onMouseEnter={() => isHover.set(true)} onMouseLeave={() => isHover.set(false)}>
+                            <li className="relative py-[0.9rem] group-one" onMouseEnter={() => isHover.set(true)}
+                                onMouseLeave={() => isHover.set(false)}>
                                 <Link to="/"
                                       className="flex items-center gap-2 px-[15px] py-[8px] rounded-xl transition-colors hover:hover-bg-color">
                                     <Window/>
@@ -252,12 +253,135 @@ function TopBar() {
                                     صفحه اصلی
                                 </Link>
                             </li>
-                            <li>
+                            <li className="relative py-[0.9rem] group-one" onMouseEnter={() => isHover.set(true)}
+                                onMouseLeave={() => isHover.set(false)}>
                                 <Link to="/"
                                       className="flex items-center gap-2 px-[15px] py-[8px] rounded-xl transition-colors hover:hover-bg-color">
                                     <ConfirmationNumber/>
                                     لیست کالا ها
                                 </Link>
+                                {/* Products List */}
+                                {/* Note: group-one-hover custom class */}
+                                <div
+                                    className="absolute top-[67px] -right-[10rem] hidden group-one-hover w-[520px] h-[230px] bg-white text-gray-600 rounded-[2px] border-[1px] border-gray-300 z-40">
+                                    {/* Category title */}
+                                    <ul>
+                                        <li className="relative flex group">
+                                            {/* menu (Products list) */}
+                                            <div
+                                                className="absolute flex flex-col flex-wrap gap-4 w-[520px] h-[230px] px-[15px] py-5 z-50">
+                                                <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                    <Link to="/">
+                                                        لوازم جانبی موبایل
+                                                    </Link>
+                                                    <li>
+                                                        <Link to="/">
+                                                            دوربین دو چشمی
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/">
+                                                            هدفون هدست
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/">
+                                                            پاوربانک
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/">
+                                                            کیف و کاور
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/">
+                                                            پایه نگهدارنده گوشی
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/">
+                                                            پایه نگهدارنده گوشی
+                                                        </Link>
+                                                    </li>
+                                                </ul>
+                                                {/*  */}
+                                                <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                    <Link to="/">
+                                                        اکسسوری هوشمند
+                                                    </Link>
+                                                    <li>
+                                                        <Link to="/">
+                                                            دوربین دو چشمی
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/">
+                                                            هدفون هدست
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/">
+                                                            پاوربانک
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/">
+                                                            کیف و کاور
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/">
+                                                            پایه نگهدارنده گوشی
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/">
+                                                            پایه نگهدارنده گوشی
+                                                        </Link>
+                                                    </li>
+                                                </ul>
+                                                {/*  */}
+                                                <ul className="flex flex-col gap-2 [&>li]:text-gray-400 [&>a]:relative [&>a]:pr-3 [&>a]:before:absolute [&>a]:before:top-0 [&>a]:before:bottom-0 [&>a]:before:right-0 [&>a]:before:m-auto [&>a]:font-bold [&>a]:before:w-[4px] [&>a]:before:h-4 [&>a]:before:bg-red-400">
+                                                    <Link to="/">
+                                                        لوازم صوتی و تصویری
+                                                    </Link>
+                                                    <li>
+                                                        <Link to="/">
+                                                            دوربین دو چشمی
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/">
+                                                            هدفون هدست
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/">
+                                                            پاوربانک
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/">
+                                                            کیف و کاور
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/">
+                                                            پایه نگهدارنده گوشی
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/">
+                                                            پایه نگهدارنده گوشی
+                                                        </Link>
+                                                    </li>
+                                                </ul>
+                                                {/*  */}
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                             <li>
                                 <Link to="/"
