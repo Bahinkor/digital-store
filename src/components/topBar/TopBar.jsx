@@ -12,11 +12,14 @@ import {
 } from "@mui/icons-material";
 import {useStore} from "@nanostores/react";
 import {isHover} from "../../stores/hover-store";
+import {showLoginModal} from "../../stores/login-store";
 
 
 function TopBar() {
     // Store (nanostore package)
     const $isHover = useStore(isHover);
+    const $showLoginModal = useStore(showLoginModal);
+
 
     // JSX
     return (
@@ -410,7 +413,7 @@ function TopBar() {
                 <div
                     className="flex items-center gap-5 [&>div]:flex [&>div]:items-center [&>div]:gap-1 [&>div]:cursor-pointer">
                     {/* Login */}
-                    <div>
+                    <div onClick={() => showLoginModal.set(true)}>
                         <Person/>
                         ورود | ثبت نام
                     </div>

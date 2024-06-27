@@ -23,4 +23,11 @@
     .bg-black-alpha-50 {
         background-color: rgba(0, 0, 0, 0.5);
     }
+
+    .bg-image-modal {
+        background-image: url("https://digital.masirwp.com/wp-content/uploads/2023/09/b4ed6a61-bebb-44cc-b5c2-34624f40b201.jpg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
