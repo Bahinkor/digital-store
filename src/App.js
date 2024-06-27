@@ -5,6 +5,7 @@ import {useRoutes} from "react-router-dom";
 import TopBar from "./components/topBar/TopBar";
 import Shape from "./components/shape/Shape";
 import LoginModal from "./components/login-modal/LoginModal";
+import ShoppingCart from "./components/shopping-cart/ShoppingCart";
 
 function App() {
     // Router
@@ -16,7 +17,9 @@ function App() {
             <TopBar/>
             {/* Login Modal */}
             <LoginModal/>
-            {/* shape screen */}
+            {/* Shopping Card */}
+            <ShoppingCart/>
+            {/* Shape Screen */}
             <Shape/>
             {router}
         </div>

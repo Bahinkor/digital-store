@@ -2,7 +2,7 @@ import React from 'react';
 import {Modal, Box} from "@mui/material";
 import {Close, AccountCircleOutlined} from "@mui/icons-material";
 import {useStore} from "@nanostores/react";
-import {showLoginModal} from "../../stores/login-store";
+import {showLoginModal} from "../../stores/show-login-store";
 import {Link} from "react-router-dom";
 
 function LoginModal() {

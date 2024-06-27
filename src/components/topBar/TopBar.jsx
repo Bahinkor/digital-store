@@ -12,13 +12,15 @@ import {
 } from "@mui/icons-material";
 import {useStore} from "@nanostores/react";
 import {isHover} from "../../stores/hover-store";
-import {showLoginModal} from "../../stores/login-store";
+import {showLoginModal} from "../../stores/show-login-store";
+import {showShoppingCart} from "../../stores/show-shopping-cart-store";
 
 
 function TopBar() {
     // Store (nanostore package)
     const $isHover = useStore(isHover);
     const $showLoginModal = useStore(showLoginModal);
+    const $showShoppingCart = useStore(showShoppingCart);
 
 
     // JSX
@@ -419,7 +421,7 @@ function TopBar() {
                     </div>
 
                     {/* Cart */}
-                    <div>
+                    <div onClick={() => showShoppingCart.set(!$showShoppingCart)}>
                         <ShoppingCart/>
                         سبد خرید
                     </div>
