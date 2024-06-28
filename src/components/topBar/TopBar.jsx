@@ -32,7 +32,7 @@ function TopBar() {
                 {/* Logo & Category */}
                 <div className="flex items-center">
                     {/* Logo */}
-                    <Link to="/">
+                    <Link to="/" className="hidden xl:block">
                         <img
                             src="https://digital.masirwp.com/wp-content/uploads/2023/09/d4dbd489-969e-414e-bd62-bb558f846d56.png"
                             alt="فروشگاه اینترنتی پارس کالا" className="w-[90px] h-10 ml-[30px]"/>
@@ -401,29 +401,29 @@ function TopBar() {
 
                 {/* Search box */}
                 <div>
-                    <form className="relative flex items-center w-[510px] h-[45px] rounded-[15px] pr-14 form-bg-color">
+                    <form className="relative flex items-center w-[300px] xl:w-[510px] h-[45px] rounded-[15px] pr-14 form-bg-color">
                         <button type="submit"
                                 className="absolute right-3 after:absolute after:w-[1px] after:h-[20px] after:rounded-3xl after:bg-white after:right-[30px] after:top-0 after:bottom-0 after:m-auto">
                             <Search className="size-7"/>
                         </button>
                         <input type="text" placeholder="جستجو در بین ۱۵۰۰ محصول تخفیف دار"
-                               className="w-[467px] h-[23px] bg-transparent m-auto placeholder:text-white focus:outline-none"/>
+                               className="w-[245px] xl:w-[467px] h-[23px] bg-transparent m-auto placeholder:text-white focus:outline-none"/>
                     </form>
                 </div>
 
                 {/* Login & cart */}
                 <div
-                    className="flex items-center gap-5 [&>div]:flex [&>div]:items-center [&>div]:gap-1 [&>div]:cursor-pointer">
+                    className="flex items-center gap-5 mr-[16px] [&>div]:flex [&>div]:items-center [&>div]:gap-1 [&>div]:cursor-pointer">
                     {/* Login */}
                     <div onClick={() => showLoginModal.set(true)}>
                         <Person/>
-                        ورود | ثبت نام
+                        <span className="hidden lg:inline-block">ورود | ثبت نام</span>
                     </div>
 
                     {/* Cart */}
                     <div onClick={() => showShoppingCart.set(!$showShoppingCart)}>
                         <ShoppingCart/>
-                        سبد خرید
+                        <span className="hidden lg:inline-block">سبد خرید</span>
                     </div>
                 </div>
             </nav>
