@@ -16,14 +16,14 @@ function App() {
     return (
         <div className="App font-iran-sans">
             <TopBar/>
+            {/* Shape Screen */}
+            <Shape/>
             {/* Mobile topBar */}
             <TopBarMobile/>
             {/* Login Modal */}
             <LoginModal/>
             {/* Shopping Card */}
             <ShoppingCart/>
-            {/* Shape Screen */}
-            <Shape/>
             {router}
         </div>
     );

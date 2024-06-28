@@ -9,8 +9,14 @@ import {
     PersonOutlined
 } from "@mui/icons-material";
 import SearchBox from "../search-box/SearchBox";
+import {useStore} from "@nanostores/react";
+import {isOpenMobileMenu} from "../../stores/is-open-mobile-menu";
 
 function TopBarMobile() {
+    // Store
+    const $isOpenMenu = useStore(isOpenMobileMenu);
+
+
     // JSX
     return (
         // TopBar Mobile
@@ -20,7 +26,7 @@ function TopBarMobile() {
                 className="fixed left-4 right-4 w-calc h-[3rem] bg-white text-white px-2 py-1 rounded-lg topbar-shadow">
                 <div
                     className="w-full h-full flex items-center justify-between gap-3 [&>span]:text-[#555] [&>span]:cursor-pointer">
-                    <span>
+                    <span onClick={() => isOpenMobileMenu.set(!$isOpenMenu)}>
                         <Menu/>
                     </span>
 
@@ -41,7 +47,7 @@ function TopBarMobile() {
 
             {/* Mobile Menu */}
             {/* h-calc-mobile-menu is custom class */}
-            <div className="absolute top-0 bottom-0 w-[260px] h-calc-mobile-menu bg-red-600 my-auto rounded-xl transition transform translate-x-[276px] z-50">
+            <div className={`absolute top-0 bottom-0 w-[260px] h-calc-mobile-menu bg-white my-auto rounded-xl transition z-50 ${$isOpenMenu || "!transform !translate-x-[276px]"}`}>
 
             </div>
 
@@ -50,7 +56,7 @@ function TopBarMobile() {
 
             {/* Mobile bottom Nav */}
             <div
-                className="fixed left-4 right-4 bottom-4 flex items-center justify-around w-calc h-[3rem] text-[#555] text-xs px-2 py-1 rounded-lg [&>a]:flex [&>a]:flex-col [&>a]:items-center">
+                className="fixed left-4 right-4 bottom-4 flex items-center justify-around w-calc h-[3rem] text-[#555] text-xs px-2 py-1 rounded-lg z-50 [&>a]:flex [&>a]:flex-col [&>a]:items-center">
 
                 <Link to="/">
                     <HomeOutlined/>
