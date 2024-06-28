@@ -38,4 +38,8 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+
+    .topbar-shadow {
+        box-shadow: 5px 2px 31px rgb(0 0 0 / 17%);
+    }
 }

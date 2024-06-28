@@ -14,6 +14,7 @@ import {useStore} from "@nanostores/react";
 import {isHover} from "../../stores/hover-store";
 import {showLoginModal} from "../../stores/show-login-store";
 import {showShoppingCart} from "../../stores/show-shopping-cart-store";
+import SearchBox from "../search-box/SearchBox";
 
 
 function TopBar() {
@@ -26,7 +27,7 @@ function TopBar() {
     // JSX
     return (
         // Navigation (top bar)
-        <header>
+        <header className="hidden sm:block">
             <nav
                 className="sticky z-50 flex items-center justify-between w-full h-[65px] text-sm bg-gradient-to-l from-blue-800 to-red-400 text-white px-4 py-2">
                 {/* Logo & Category */}
@@ -400,16 +401,7 @@ function TopBar() {
                 </div>
 
                 {/* Search box */}
-                <div className="hidden lg:block">
-                    <form className="relative flex items-center w-[300px] xl:w-[510px] h-[45px] rounded-[15px] pr-14 form-bg-color">
-                        <button type="submit"
-                                className="absolute right-3 after:absolute after:w-[1px] after:h-[20px] after:rounded-3xl after:bg-white after:right-[30px] after:top-0 after:bottom-0 after:m-auto">
-                            <Search className="size-7"/>
-                        </button>
-                        <input type="text" placeholder="جستجو در بین ۱۵۰۰ محصول تخفیف دار"
-                               className="w-[245px] xl:w-[467px] h-[23px] bg-transparent m-auto placeholder:text-white focus:outline-none"/>
-                    </form>
-                </div>
+                <SearchBox show="hidden lg:block" bgColor="form-bg-color" formWidth="w-[300px]" formHeight="h-[45px]"/>
 
                 {/* Login & cart */}
                 <div
