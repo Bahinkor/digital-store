@@ -400,7 +400,7 @@ function TopBar() {
                 </div>
 
                 {/* Search box */}
-                <div>
+                <div className="hidden lg:block">
                     <form className="relative flex items-center w-[300px] xl:w-[510px] h-[45px] rounded-[15px] pr-14 form-bg-color">
                         <button type="submit"
                                 className="absolute right-3 after:absolute after:w-[1px] after:h-[20px] after:rounded-3xl after:bg-white after:right-[30px] after:top-0 after:bottom-0 after:m-auto">
