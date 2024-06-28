@@ -13,7 +13,7 @@ import SearchBox from "../search-box/SearchBox";
 function TopBarMobile() {
     // JSX
     return (
-        // TopBar Mobile - Header Mobile
+        // TopBar Mobile
         <header className="block sm:hidden p-4">
             {/* topbar-shadow & w-calc is custom class */}
             <nav
@@ -39,7 +39,11 @@ function TopBarMobile() {
 
 
 
-            
+            {/* Mobile Menu */}
+            {/* h-calc-mobile-menu is custom class */}
+            <div className="absolute top-0 bottom-0 w-[260px] h-calc-mobile-menu bg-red-600 my-auto rounded-xl transition transform translate-x-[276px] z-50">
+
+            </div>
 
 
 

@@ -46,4 +46,8 @@
     .w-calc {
         width: calc(100% - 32px);
     }
+
+    .h-calc-mobile-menu {
+        height: calc(100% - 170px);
+    }
 }
