@@ -29,7 +29,7 @@ function TopBar() {
         // Navigation (top bar)
         <header className="hidden sm:block">
             <nav
-                className="sticky z-50 flex items-center justify-between w-full h-[65px] text-sm bg-gradient-to-l from-blue-800 to-red-400 text-white px-4 py-2">
+                className="fixed z-50 flex items-center justify-between w-full h-[65px] text-sm bg-gradient-to-l from-blue-800 to-red-400 text-white px-4 py-2">
                 {/* Logo & Category */}
                 <div className="flex items-center">
                     {/* Logo */}
@@ -401,7 +401,8 @@ function TopBar() {
                 </div>
 
                 {/* Search box */}
-                <SearchBox show="hidden lg:block" bgColor="form-bg-color" formWidth="w-[300px]" formHeight="h-[45px]"/>
+                <SearchBox show="hidden lg:block" bgColor="form-bg-color" formWidth="w-[300px]" formHeight="h-[45px]"
+                           inputWidth="w-[245px]" inputHeight="h-[23px]"/>
 
                 {/* Login & cart */}
                 <div

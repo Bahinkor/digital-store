@@ -42,4 +42,8 @@
     .topbar-shadow {
         box-shadow: 5px 2px 31px rgb(0 0 0 / 17%);
     }
+
+    .w-calc {
+        width: calc(100% - 32px);
+    }
 }
