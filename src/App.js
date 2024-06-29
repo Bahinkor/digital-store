@@ -7,7 +7,6 @@ import TopBarMobile from "./components/topBar-mobile/TopBarMobile";
 import Shape from "./components/shape/Shape";
 import LoginModal from "./components/login-modal/LoginModal";
 import ShoppingCart from "./components/shopping-cart/ShoppingCart";
-import SliderImages from "./components/slider-images/SliderImages";
 
 function App() {
     // Router
@@ -26,9 +25,6 @@ function App() {
             {/* Shopping Card */}
             <ShoppingCart/>
             {router}
-
-            {/* Main Section */}
-            <SliderImages/>
         </div>
     );
 }

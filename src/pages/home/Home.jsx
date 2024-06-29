@@ -1,11 +1,19 @@
 import React from 'react';
+import SliderImages from "../../components/slider-images/SliderImages";
 
 function Home() {
     // JSX
     return (
-        <div>
+        <>
+            {/* Main Section */}
+            <main>
 
-        </div>
+                {/* Slider Images */}
+                <SliderImages/>
+
+
+            </main>
+        </>
     );
 }
 
