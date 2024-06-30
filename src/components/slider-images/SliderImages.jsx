@@ -2,7 +2,11 @@ import React, {useState} from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/scrollbar";
+import "swiper/css/pagination";
 import {Link} from "react-router-dom";
+// import Swiper core and required modules
+import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
 
 function SliderImages() {
     // State
@@ -45,11 +49,14 @@ function SliderImages() {
         <div className="pt-[65px]">
 
             <Swiper
+                // install Swiper modules
+                modules={[Navigation, Pagination, A11y, Autoplay]}
                 spaceBetween={0}
                 slidesPerView={1}
-                scrollbar={true}
+                pagination={true}
                 navigation={true}
                 loop={true}
+                autoplay={true}
             >
 
                 {/* Slides */}
