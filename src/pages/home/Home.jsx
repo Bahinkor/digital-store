@@ -1,5 +1,6 @@
 import React from 'react';
 import SliderImages from "../../components/slider-images/SliderImages";
+import PopularCategories from "../../components/popular-categories/PopularCategories";
 
 function Home() {
     // JSX
@@ -10,6 +11,12 @@ function Home() {
 
                 {/* Slider Images */}
                 <SliderImages/>
+
+                <div className="container">
+
+                    <PopularCategories/>
+
+                </div>
 
 
             </main>

@@ -7,6 +7,9 @@ module.exports = {
     fontFamily: {
       "iran-sans": "iran-sans",
     },
+    container: {
+      "center": true
+    },
     extend: {},
   },
   plugins: [],
