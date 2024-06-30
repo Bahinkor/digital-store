@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
 import {Link} from "react-router-dom";
 
 function SliderImages() {
@@ -47,6 +49,7 @@ function SliderImages() {
                 slidesPerView={1}
                 scrollbar={true}
                 navigation={true}
+                loop={true}
             >
 
                 {/* Slides */}
