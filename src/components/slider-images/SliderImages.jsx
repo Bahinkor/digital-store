@@ -6,7 +6,7 @@ import "swiper/css/scrollbar";
 import "swiper/css/pagination";
 import {Link} from "react-router-dom";
 // import Swiper core and required modules
-import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
+import {Pagination, A11y, Autoplay} from 'swiper/modules';
 
 function SliderImages() {
     // State
@@ -46,34 +46,36 @@ function SliderImages() {
 
     // JSX
     return (
-        <div className="pt-[65px]">
+        <section>
+            <div className="pt-[65px]">
 
-            <Swiper
-                // install Swiper modules
-                modules={[Navigation, Pagination, A11y, Autoplay]}
-                spaceBetween={0}
-                slidesPerView={1}
-                pagination={true}
-                navigation={true}
-                loop={true}
-                autoplay={true}
-            >
+                <Swiper
+                    // install Swiper modules
+                    modules={[Pagination, A11y, Autoplay]}
+                    spaceBetween={0}
+                    slidesPerView={1}
+                    pagination={true}
+                    loop={true}
+                    autoplay={true}
+                >
 
-                {/* Slides */}
-                {
-                    slider.map(slide => (
-                        <SwiperSlide key={slide.id}>
-                            <Link to={slide.linkAddress}>
-                                <img src={slide.src}
-                                     alt={slide.alt}
-                                     loading="lazy"/>
-                            </Link>
-                        </SwiperSlide>
-                    ))
-                }
+                    {/* Slides */}
+                    {
+                        slider.map(slide => (
+                            <SwiperSlide key={slide.id}>
+                                <Link to={slide.linkAddress}>
+                                    <img src={slide.src}
+                                         alt={slide.alt}
+                                         loading="lazy"/>
+                                </Link>
+                            </SwiperSlide>
+                        ))
+                    }
 
-            </Swiper>
-        </div>
+                </Swiper>
+
+            </div>
+        </section>
     );
 }
 
