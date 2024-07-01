@@ -26,7 +26,7 @@ function TopBarMobile() {
         <header className="block sm:hidden p-4">
             {/* topbar-shadow & w-calc is custom class */}
             <nav
-                className="fixed left-4 right-4 w-calc h-[3rem] bg-white text-white px-2 py-1 rounded-lg topbar-shadow">
+                className="fixed left-4 right-4 w-calc h-[3rem] bg-white text-white px-2 py-1 rounded-lg topbar-shadow z-50">
                 <div
                     className="w-full h-full flex items-center justify-between gap-3 [&>span]:text-[#555] [&>span]:cursor-pointer">
                     <span onClick={() => isOpenMobileMenu.set(!$isOpenMenu)}>
@@ -49,7 +49,7 @@ function TopBarMobile() {
             {/* Mobile Menu */}
             {/* h-calc-mobile-menu is custom class */}
             <div
-                className={`absolute top-0 bottom-0 w-[260px] h-calc-mobile-menu bg-white my-auto rounded-xl transition z-50 ${$isOpenMenu || "!transform !translate-x-[276px]"}`}>
+                className={`fixed top-0 bottom-0 w-[260px] h-calc-mobile-menu bg-white my-auto rounded-xl transition z-50 ${$isOpenMenu || "!transform !translate-x-[276px]"}`}>
 
                 {/* Menus */}
                 <div className="text-[#555]">
