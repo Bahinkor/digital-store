@@ -190,7 +190,7 @@ function TopBarMobile() {
 
             {/* Mobile bottom Nav */}
             <div
-                className="fixed left-4 right-4 bottom-4 flex items-center justify-around w-calc h-[3rem] text-[#555] text-xs px-2 py-1 rounded-lg z-50 [&>a]:flex [&>a]:flex-col [&>a]:items-center">
+                className="fixed left-4 right-4 bottom-4 flex items-center justify-around w-calc h-[3rem] bg-white text-[#555] text-xs px-2 py-1 rounded-lg z-50 [&>a]:flex [&>a]:flex-col [&>a]:items-center">
 
                 <Link to="/">
                     <HomeOutlined/>

@@ -41,13 +41,13 @@ function ProductSlider() {
     return (
         <section>
 
-            <div>
+            <div className="mt-10">
                 {/* top section (title) */}
                 <div
                     className="flex items-center justify-between w-full h-[73px] bg-red-400 text-white px-5 rounded-xl [&>div]:flex [&>div]:items-center [&>div]:justify-between [&>div]:gap-2">
 
                     {/* top section */}
-                    <div className="font-bold text-xl">
+                    <div className="font-bold text-[12px] sm:text-[15px] md:text-xl">
                         <LocalOffer/>
                         پیشنهاد ویژه پارس کالا
                     </div>
@@ -55,23 +55,23 @@ function ProductSlider() {
                     <div className="[&>div]:text-xl">
                         {/* counter */}
                         <div>
-                            <span className="bg-white text-[#555] font-bold ml-2 px-4 py-[6px] rounded-lg">۰</span>
+                            <span className="bg-white text-[#555] font-bold ml-2 px-2 sm:px-4 py-0 sm:py-[6px] rounded-lg">۰</span>
                             :
                         </div>
                         <div>
-                            <span className="bg-white text-[#555] font-bold ml-2 px-4 py-[6px] rounded-lg">۰</span>
+                            <span className="bg-white text-[#555] font-bold ml-2 px-2 sm:px-4 py-0 sm:py-[6px] rounded-lg">۰</span>
                             :
                         </div>
                         <div>
-                            <span className="bg-white text-[#555] font-bold ml-2 px-4 py-[6px] rounded-lg">۰</span>
+                            <span className="bg-white text-[#555] font-bold ml-2 px-2 sm:px-4 py-0 sm:py-[6px] rounded-lg">۰</span>
                             :
                         </div>
                         <div>
-                            <span className="bg-white text-[#555] font-bold ml-2 px-4 py-[6px] rounded-lg">۰</span>
+                            <span className="bg-white text-[#555] font-bold ml-2 px-2 sm:px-4 py-0 sm:py-[6px] rounded-lg">۰</span>
                         </div>
                     </div>
                     {/*  */}
-                    <div>
+                    <div className="!hidden sm:!block">
                         <Link to="/" className="flex items-center">
                             مشاهده همه
                             <ArrowBackIos className="!size-4"/>
@@ -83,26 +83,26 @@ function ProductSlider() {
 
                 {/* slider */}
 
-                <div>
+                <div className="mt-7">
 
                     <Swiper
                         // install Swiper modules
                         modules={[Pagination, A11y, Autoplay]}
                         breakpoints={{
                             0: {
-                                slidesPerView: 3,
+                                slidesPerView: 1,
                             },
                             550: {
-                                slidesPerView: 4,
+                                slidesPerView: 2,
                             },
                             768: {
-                                slidesPerView: 5,
+                                slidesPerView: 2,
                             },
                             1024: {
-                                slidesPerView: 6,
+                                slidesPerView: 3,
                             },
                             1280: {
-                                slidesPerView: 5,
+                                slidesPerView: 4,
                             },
                             1536: {
                                 slidesPerView: 5,
