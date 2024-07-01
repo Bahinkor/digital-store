@@ -76,29 +76,24 @@ function PopularCategories() {
                         breakpoints={{
                             0: {
                                 slidesPerView: 3,
-                                spaceBetween: 15
                             },
                             550: {
                                 slidesPerView: 4,
-                                spaceBetween: 15
                             },
                             768: {
                                 slidesPerView: 5,
-                                spaceBetween: 15
                             },
                             1024: {
                                 slidesPerView: 6,
-                                spaceBetween: 15
                             },
                             1280: {
                                 slidesPerView: 8,
-                                spaceBetween: 15
                             },
                             1536: {
                                 slidesPerView: 9,
-                                spaceBetween: 15
                             }
                         }}
+                        spaceBetween={"15"}
                         autoplay={true}
                     >
 
