@@ -64,7 +64,7 @@ function PopularCategories() {
     // JSX
     return (
         <section>
-            <div className="p-4 my-[20px]">
+            <div className="my-[20px]">
                 <h2 className="font-bold text-lg text-[#2A2A2A] mb-[30px]">دسته بندی های داغ</h2>
 
                 {/* Images */}
