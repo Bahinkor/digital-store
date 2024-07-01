@@ -10,7 +10,11 @@ module.exports = {
     container: {
       "center": true
     },
-    extend: {},
+    extend: {
+      screens: {
+        "xs": "550px"
+      }
+    },
   },
   plugins: [],
 }

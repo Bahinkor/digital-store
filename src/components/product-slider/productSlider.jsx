@@ -44,7 +44,7 @@ function ProductSlider() {
             <div className="mt-10">
                 {/* top section (title) */}
                 <div
-                    className="flex items-center justify-between w-full h-[73px] bg-red-400 text-white px-5 rounded-xl [&>div]:flex [&>div]:items-center [&>div]:justify-between [&>div]:gap-2">
+                    className="flex items-center justify-between w-full h-[73px] bg-red-400 text-white px-1 sm:px-5 rounded-xl [&>div]:flex [&>div]:items-center [&>div]:justify-between [&>div]:gap-2">
 
                     {/* top section */}
                     <div className="font-bold text-[12px] sm:text-[15px] md:text-xl">
@@ -55,19 +55,23 @@ function ProductSlider() {
                     <div className="[&>div]:text-xl">
                         {/* counter */}
                         <div>
-                            <span className="bg-white text-[#555] font-bold ml-2 px-2 sm:px-4 py-0 sm:py-[6px] rounded-lg">۰</span>
+                            <span
+                                className="bg-white text-[#555] font-bold ml-2 px-2 sm:px-4 py-0 sm:py-[6px] rounded-lg">۰</span>
                             :
                         </div>
                         <div>
-                            <span className="bg-white text-[#555] font-bold ml-2 px-2 sm:px-4 py-0 sm:py-[6px] rounded-lg">۰</span>
+                            <span
+                                className="bg-white text-[#555] font-bold ml-2 px-2 sm:px-4 py-0 sm:py-[6px] rounded-lg">۰</span>
                             :
                         </div>
                         <div>
-                            <span className="bg-white text-[#555] font-bold ml-2 px-2 sm:px-4 py-0 sm:py-[6px] rounded-lg">۰</span>
+                            <span
+                                className="bg-white text-[#555] font-bold ml-2 px-2 sm:px-4 py-0 sm:py-[6px] rounded-lg">۰</span>
                             :
                         </div>
                         <div>
-                            <span className="bg-white text-[#555] font-bold ml-2 px-2 sm:px-4 py-0 sm:py-[6px] rounded-lg">۰</span>
+                            <span
+                                className="bg-white text-[#555] font-bold ml-1 px-2 sm:px-4 py-0 sm:py-[6px] rounded-lg">۰</span>
                         </div>
                     </div>
                     {/*  */}
@@ -119,7 +123,7 @@ function ProductSlider() {
 
                                     <div>
                                         {/* product cart */}
-                                        <div className="w-[276px] h-[326px] bg-transparent rounded-lg">
+                                        <div className="w-full xs:w-[276px] h-[326px] bg-transparent rounded-lg">
                                             <div>
                                                 <Link to="/"
                                                       className="relative flex items-center justify-center bg-[#f4f4f4] rounded-md">
