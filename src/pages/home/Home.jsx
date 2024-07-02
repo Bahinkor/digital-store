@@ -16,6 +16,7 @@ function Home() {
                 <div className="container p-4">
 
                     <PopularCategories/>
+                    {/* first product slider */}
                     <ProductSlider/>
 
                 </div>
