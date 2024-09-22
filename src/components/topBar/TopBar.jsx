@@ -35,7 +35,7 @@ function TopBar() {
                     {/* Logo */}
                     <Link to="/" className="hidden xl:block">
                         <img
-                            src="https://digital.masirwp.com/wp-content/uploads/2023/09/d4dbd489-969e-414e-bd62-bb558f846d56.png"
+                            src="/images/logo.png"
                             alt="فروشگاه اینترنتی پارس کالا" className="w-[90px] h-10 ml-[30px]"/>
                     </Link>
 

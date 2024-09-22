@@ -13,32 +13,20 @@ function SliderImages() {
     const [slider, setSlider] = useState([
         {
             id: 1,
-            src: "https://digital.masirwp.com/wp-content/uploads/2023/09/64e1ebd4426e5.jpg",
+            src: "/images/slider-1.jpg",
             alt: "موبایل هونور",
             linkAddress: "*"
         },
         {
             id: 2,
-            src: "https://digital.masirwp.com/wp-content/uploads/2023/09/64dcbd80ecac5.jpg",
-            alt: "موبایل نوکیا",
-            linkAddress: "*"
-        },
-        {
-            id: 3,
-            src: "https://digital.masirwp.com/wp-content/uploads/2023/09/full-screen-banners.jpg",
+            src: "/images/slider-2.jpg",
             alt: "ساعت هوشمند",
             linkAddress: "*"
         },
         {
-            id: 4,
-            src: "https://digital.masirwp.com/wp-content/uploads/2023/09/airpod.jpg",
+            id: 3,
+            src: "/images/slider-3.jpg",
             alt: "محبوب ترین ایرپاد ها",
-            linkAddress: "*"
-        },
-        {
-            id: 5,
-            src: "https://digital.masirwp.com/wp-content/uploads/2023/09/mobile-banner.jpg",
-            alt: "موبایل سامسونگ",
             linkAddress: "*"
         }
     ]);

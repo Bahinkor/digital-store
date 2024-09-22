@@ -13,50 +13,38 @@ function PopularCategories() {
     const [categories, setCategories] = useState([
         {
             id: 1,
-            src: "https://digital.masirwp.com/wp-content/uploads/2023/09/8.webp",
+            src: "/images/category-1.webp",
             alt: "کیس",
             linkAddress: "*"
         },
         {
             id: 2,
-            src: "https://digital.masirwp.com/wp-content/uploads/2023/09/7.webp",
+            src: "/images/category-2.webp",
             alt: "رم",
             linkAddress: "*"
         },
         {
             id: 3,
-            src: "https://digital.masirwp.com/wp-content/uploads/2023/09/6.webp",
-            alt: "کارت گرافیک",
-            linkAddress: "*"
-        },
-        {
-            id: 4,
-            src: "https://digital.masirwp.com/wp-content/uploads/2023/09/5.webp",
-            alt: "منبع تغذیه",
-            linkAddress: "*"
-        },
-        {
-            id: 5,
-            src: "https://digital.masirwp.com/wp-content/uploads/2023/09/4.webp",
-            alt: "پردازنده",
-            linkAddress: "*"
-        },
-        {
-            id: 6,
-            src: "https://digital.masirwp.com/wp-content/uploads/2023/09/3.webp",
-            alt: "مادربورد",
-            linkAddress: "*"
-        },
-        {
-            id: 7,
-            src: "https://digital.masirwp.com/wp-content/uploads/2023/09/2.webp",
+            src: "/images/category-3.webp",
             alt: "مانیتور",
             linkAddress: "*"
         },
         {
-            id: 8,
-            src: "https://digital.masirwp.com/wp-content/uploads/2023/09/1.webp",
-            alt: "خنک کننده",
+            id: 4,
+            src: "/images/category-1.webp",
+            alt: "کیس",
+            linkAddress: "*"
+        },
+        {
+            id: 5,
+            src: "/images/category-2.webp",
+            alt: "رم",
+            linkAddress: "*"
+        },
+        {
+            id: 6,
+            src: "/images/category-3.webp",
+            alt: "مانیتور",
             linkAddress: "*"
         },
     ]);

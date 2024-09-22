@@ -134,7 +134,7 @@ function ProductSlider() {
                                                         <LocalOfferOutlined className="!size-5 !stroke-red-400"/>
                                                     </span>
                                                     <img
-                                                        src="https://digital.masirwp.com/wp-content/uploads/2022/08/8b992591cd7606de5eb5affe9ec8b9725c349fe3_1654514995-1-300x300.jpg"
+                                                        src="/images/macbook.jpg"
                                                         alt="مک بوک" className="size-[150px] mix-blend-multiply"/>
                                                 </Link>
                                             </div>
